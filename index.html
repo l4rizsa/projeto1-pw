@@ -8,16 +8,74 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 
 <body>
     <header class="header">
-        <div>
+        <div> <!--Título e logo são provisórios-->
             <img src="/images/controle.png" alt="logo" class="ms-5">
-            <h4 class="title">GameOtter</h4>
+            <h3 class="title">GameOtter</h3>
         </div>
 
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Explorar</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Plataformas</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link disabled" aria-disabled="true">Lançamentos</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search" id="pesquisa">
+                        <input class="form-control me-2" type="search" placeholder="Pesquise aqui..."
+                            aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+                    <ul class="navbar-nav ms-4">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Perfil</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Minhas Listas</a></li>
+                                <li><a class="dropdown-item" href="#">Minhas Reviews</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
     </header>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

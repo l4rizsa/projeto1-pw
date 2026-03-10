@@ -3,6 +3,8 @@ body{
 }
 
 .header{
+    display: flex;
+    align-items: center;
     background-color: #1E1E39;
 }
 
@@ -14,6 +16,62 @@ body{
 .title{
     margin-left: 10px;
     margin-top: 5px;
+    margin-right: 60px;
     color: #B6B5B8;
     font-family: monospace;
+}
+
+.navbar-nav{
+    margin-left: 10px;
+    color: #B6B5B8;
+}
+
+.nav-link{
+    color: #B6B5B8;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-link.disabled{
+    color: #75737d;
+}
+
+#pesquisa{
+    margin-left: 490px;
+}
+
+#pesquisa input::placeholder{
+    color:#B6B5B8;
+}
+
+.form-control.me-2{
+    background-color: #1E1E39;
+}
+
+.navbar .nav-link:focus,
+.navbar .nav-link:active,
+.navbar .nav-link.active {
+    color: #B6B5B8;
+}
+
+#home.active{
+    color: white;
+}
+
+.navbar-toggler{
+    color:#B6B5B8;
+}
+
+.navbar-toggler {
+    border-color: #B6B5B8;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
