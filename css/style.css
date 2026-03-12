@@ -1,19 +1,19 @@
-body{
+body {
     background-color: #121114;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     background-color: #1E1E39;
 }
 
-.header div{
+.header div {
     display: flex;
     align-items: center;
 }
- 
-.title{
+
+.title {
     margin-left: 10px;
     margin-top: 5px;
     margin-right: 60px;
@@ -21,32 +21,32 @@ body{
     font-family: monospace;
 }
 
-.navbar-nav{
+.navbar-nav {
     margin-left: 10px;
     color: #B6B5B8;
 }
 
-.nav-link{
+.nav-link {
     color: #B6B5B8;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: white;
 }
 
-.nav-link.disabled{
+.nav-link.disabled {
     color: #75737d;
 }
 
-#pesquisa{
+#pesquisa {
     margin-left: 490px;
 }
 
-#pesquisa input::placeholder{
-    color:#B6B5B8;
+#pesquisa input::placeholder {
+    color: #B6B5B8;
 }
 
-.form-control.me-2{
+.form-control.me-2 {
     background-color: #1E1E39;
 }
 
@@ -56,12 +56,12 @@ body{
     color: #B6B5B8;
 }
 
-#home.active{
+#home.active {
     color: white;
 }
 
-.navbar-toggler{
-    color:#B6B5B8;
+.navbar-toggler {
+    color: #B6B5B8;
 }
 
 .navbar-toggler {
@@ -74,4 +74,82 @@ body{
 
 .navbar-toggler:focus {
     box-shadow: none;
+}
+
+#pesquisa input:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+#pesquisa input {
+    color: white;
+}
+
+.dropdown-item:active{
+    background-color: white;
+    color:#121114;
+}
+
+/**.border-bottom{
+    color:white;
+}**/
+
+hr {
+    border: none;
+    height: 1px;
+    background: #B6B5B8;
+    margin: 20px 0;
+}
+
+.section-title{
+    margin-top: 40px;
+    margin-bottom: 3px;
+    margin-left: -10px;
+    color:#B6B5B8;
+}
+
+hr {
+    margin-top: 5px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #75737d;
+    border-radius: 25px;
+    transition: transform 0.2s ease;
+}
+
+#imgcard{
+    margin: 4px 4px -1px 4px;
+    background-color: #B6B5B8;
+}
+
+#gct{
+    text-align: center;
+    margin: 2px 2px 2px 2px;
+    padding: 7px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#pc{
+    border-radius: 100px;
+}
+
+#cpc{
+    margin: 50px 200px 50px 200px;
+    gap: 50px;
 }
