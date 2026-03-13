@@ -92,10 +92,6 @@ body {
     color:#121114;
 }
 
-/**.border-bottom{
-    color:white;
-}**/
-
 hr {
     border: none;
     height: 1px;
@@ -155,6 +151,11 @@ hr {
     margin: 50px 200px 50px 200px;
     gap: 50px;
 }
+
+#myCarousel:hover{
+    cursor:pointer;
+}
+
 
 /*PERFIL*/
 
