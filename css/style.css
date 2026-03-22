@@ -228,6 +228,24 @@ hr {
 
 /*LOGIN*/
 
+.border {
+    background-color: #1f1f2e;
+    border: 2px solid #6f42c1;
+    border-radius: 15px;
+}
+.border h3 {
+    color: #a78bfa;
+}
+.btn-primary {
+    background-color: #6f42c1;
+    border: none;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #5a32a3;
+    transform: scale(1.05);
+}
+
 
 /*REVIEWS*/
 
