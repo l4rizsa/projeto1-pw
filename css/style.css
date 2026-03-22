@@ -1,177 +1,4 @@
 /*INDEX*/
-
-/*ORIGINAL*/
-
-/**
-body {
-    background-color: #121114;
-
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    background-color: #1E1E39;
-}
-
-.header div {
-    display: flex;
-    align-items: center;
-}
-
-.title {
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-right: 60px;
-    color: #B6B5B8;
-    font-family: monospace;
-}
-
-.title input:focus {
-    border-color: white;
-    box-shadow: none;
-}
-
-.navbar-nav {
-    margin-left: 10px;
-    color: #B6B5B8;
-}
-
-.nav-link {
-    color: #B6B5B8;
-}
-
-.nav-link:hover {
-    color: white;
-}
-
-.nav-link.disabled {
-    color: #75737d;
-}
-
-#pesquisa {
-    margin-left: 490px;
-}
-
-#pesquisa input::placeholder {
-    color: #B6B5B8;
-}
-
-.form-control.me-2 {
-    background-color: #1E1E39;
-}
-
-.navbar .nav-link:focus,
-.navbar .nav-link:active,
-.navbar .nav-link.active {
-    color: #B6B5B8;
-}
-
-#home.active {
-    color: white;
-}
-
-.navbar-toggler {
-    color: #B6B5B8;
-}
-
-.navbar-toggler {
-    border-color: #B6B5B8;
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-#pesquisa input:focus {
-    border-color: white;
-    box-shadow: none;
-}
-
-#pesquisa input {
-    color: white;
-}
-
-.dropdown-item:hover{
-    background-color: #dcdade;
-}
-
-.dropdown-item:active{
-    background-color: white;
-    color:#121114;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background: #B6B5B8;
-    margin: 20px 0;
-}
-
-.section-title{
-    margin-top: 40px;
-    margin-bottom: 3px;
-    margin-left: -10px;
-    color:#B6B5B8;
-}
-
-hr {
-    margin-top: 5px;
-}
-
-.cards {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.card {
-    flex: 1;
-    background-color: #75737d;
-    border-radius: 25px;
-    transition: transform 0.2s ease;
-}
-
-#imgcard{
-    margin: 4px 4px -1px 4px;
-    background-color: #B6B5B8;
-}
-
-#gct{
-    text-align: center;
-    margin: 2px 2px 2px 2px;
-    padding: 7px;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-    box-shadow: 0 0 15px #9333EA;
-}
-
-#pc{
-    border-radius: 100px;
-}
-
-#cpc{
-    margin: 50px 200px 50px 200px;
-    gap: 50px;
-}
-
-#myCarousel:hover{
-    cursor:pointer;
-}
-**/
-
-/*ROXO*/
 body {
     background-color: #0B0613;
 }
@@ -188,16 +15,16 @@ body {
 }
 
 .title {
-    margin-left: 10px;
+    /*margin-left: 10px;
     margin-top: 5px;
-    margin-right: 60px;
+    margin-right: 60px;*/
     color: #F5F3FF;
     font-family: monospace;
 }
 
-.navbar-nav {
+/*.navbar-nav {
     margin-left: 10px;
-}
+}*/
 
 .nav-link {
     color: #F5F3FF;
@@ -217,10 +44,6 @@ body {
 .navbar .nav-link:active,
 .navbar .nav-link.active {
     color: #A855F7;
-}
-
-#pesquisa {
-    margin-left: 490px;
 }
 
 #pesquisa input {
@@ -275,20 +98,21 @@ body {
     color: white;
 }
 
-.carousel-item{
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    margin: 0;
-}
-
-.carousel-item img{
-    width: 100%;
+.carousel-inner{
+    height: 400px;
     height: 100%;
-    object-fit: cover;
+    position: relative;
 }
 
-.carousel-item {
+.carousel-inner::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(11,6,19,0.4), transparent);
+}
+/**
+.carousel-item{
+    height: 100%;
     position: relative;
 }
 
@@ -297,6 +121,22 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(11,6,19,0.4), transparent);
+}**/
+
+.imgcarousel {
+    width: 100%;
+    height: 400px;
+    background: #7c72a7; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imgcarousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .carousel-caption {

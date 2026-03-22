@@ -13,16 +13,15 @@
 
 <body>
     <header class="header">
-        <div> <!--Título e logo são provisórios-->
-            <img src="images/controle.png" alt="logo" class="ms-5">
-            <a class="nav-link active" aria-current="page" href="#" id="home">
-                <h3 class="title">GameOtter</h3>
-            </a>
-
-        </div>
-
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+
+                <div class="d-flex align-items-center gap-2 px-3 px-lg-5">
+                    <img src="images/controle.png" alt="logo" style="width: 40px;">
+                    <a class="nav-link active p-0" href="#" id="home">
+                        <h5 class="title m-0">GameOtter</h5>
+                    </a>
+                </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -31,20 +30,24 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item ms-3">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Explorar</a>
                         </li>
-                        <li class="nav-item ms-3">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Plataformas</a>
                         </li>
-                        <li class="nav-item ms-3">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Lançamentos</a>
                         </li>
                     </ul>
 
-                    <form class="d-flex" role="search" id="pesquisa">
-                        <input class="form-control me-2" type="search" placeholder="Pesquise aqui..."
+                </div>
+
+                <div class="d-flex align-items-center ms-lg-auto w-100 w-lg-auto">
+
+                    <form class="d-flex me-lg-3 my-2 my-lg-0 w-100 w-lg-auto" id="pesquisa" role="search">
+                        <input class="form-control me-2" id="inputpesquisa" type="search" placeholder="Pesquise aqui..."
                             aria-label="Search" />
                         <button class="btn" type="submit" id="btnpesquisa">
                             <i class="bi bi-search"></i>
@@ -53,7 +56,7 @@
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ms-4">
-                            <a class="nav-link me-3" href="#">Login</a>
+                            <a class="nav-link me-3" id="navlogin" href="#">Login</a>
                         </li>
                     </ul>
 
@@ -85,15 +88,18 @@
 
     <div class="container">
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-indicators"> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
+            <div class="carousel-indicators" id="carouselIndicators">
+                <!--<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
                     class="" aria-label="Slide 1"></button> <button type="button" data-bs-target="#myCarousel"
                     data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button> <button
                     type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    class=""></button>
+                    class=""></button>-->
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" id="carouselInner">
-                    <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
+            <div class="carousel-inner" id="carouselInner">
+                <!--<div class="carousel-item active" id="carouselItem">-->
+
+
+                <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
                         <img src="images/banner.png" class="d-block w-100" alt="">
                         <div class="container">
                             <div class="carousel-caption text-start">
@@ -103,10 +109,10 @@
                             </div>
                         </div>
                     </a>-->
-                </div>
+                <!--</div>-->
 
-                <div class="carousel-item" id="carouselInner">
-                    <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
+
+                <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
                         <img src="images/banner.png" class="d-block w-100" alt="">
                         <div class="container">
                             <div class="carousel-caption">
@@ -115,9 +121,8 @@
                             </div>
                         </div>
                     </a>-->
-                </div>
-                <div class="carousel-item" id="carouselInner">
-                    <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
+
+                <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
                         <img src="images/banner.png" class="d-block w-100" alt="">
                         <div class="container">
                             <div class="carousel-caption text-end">
@@ -126,7 +131,7 @@
                             </div>
                         </div>
                     </a>-->
-                </div>
+
             </div> <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span

@@ -1,5 +1,6 @@
 function createCarousel(data, containerId) {
     const container = document.getElementById(containerId);
+    const indicators = document.getElementById("carouselIndicators");   
 
     if (!container) return;
 
@@ -16,7 +17,9 @@ function createCarousel(data, containerId) {
 
         item.innerHTML = `
             <a href="game.html?id=${id}" class="carousel-link">
-                <img src="${game.image}" class="d-block w-100" alt="">
+                <div class="imgcarousel">
+                    <img src="${game.image}" class="d-block w-100" alt="">
+                </div>
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1>${game.title}</h1>
@@ -27,6 +30,22 @@ function createCarousel(data, containerId) {
         `;
 
         container.appendChild(item);
+
+        if (indicators) {
+            const button = document.createElement("button");
+
+            button.type = "button";
+            button.setAttribute("data-bs-target", "#myCarousel");
+            button.setAttribute("data-bs-slide-to", index);
+            button.setAttribute("aria-label", `Slide ${index + 1}`);
+
+            if (index === 0) {
+                button.classList.add("active");
+                button.setAttribute("aria-current", "true");
+            }
+
+            indicators.appendChild(button);
+        }
     });
 }
 
@@ -76,5 +95,8 @@ if (typeof games !== "undefined" && gameId) {
 }
 
 
-createCarousel(destaque, "carouselInner");
-                createCards(melhoresAv, "melhoresAv");
+//createCarousel(destaque, "carouselItem");
+if (typeof destaque !== "undefined") {
+    createCarousel(destaque, "carouselInner");
+}
+createCards(melhoresAv, "melhoresAv");
