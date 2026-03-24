@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
 </head>
 
 <body>
-<header class="header">
+    <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
@@ -40,8 +41,7 @@
                             <a class="nav-link" href="#">Lançamentos</a>
                         </li>
                         <li class="login nav-item">
-                            <a class="nav-link" href="cadastro.html">Cadastrar</a>
-                        </li>
+                            <a class="nav-link" href="login.html">Login</a>
                     </ul>
 
                 </div>
@@ -70,26 +70,32 @@
             </div>
         </nav>
     </header>
-<div class="border p-4 bg-secondary" style="width: 350px; margin: 100px auto;">
+    <div class="border p-4 bg-secondary " style="width: 350px;  margin: 100px auto;">
 
-    <h3 class="text-center mb-3">GameOtter</h3>
-    <h5 class="text-center mb-4">Login</h5>
+        <h3 class="text-center mb-3">GameOtter</h3>
+        <h5 class="text-center mb-4">Cadastro</h5>
 
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" id="emailLogin" class="form-control" placeholder="Digite seu email">
+        <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" id="nameLogin" class="form-control" placeholder="Digite seu nome">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" id="emailLogin" class="form-control" placeholder="Digite seu email">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Senha</label>
+            <input type="password" id="passwordLogin" class="form-control" placeholder="Digite sua senha">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Confirmar Senha</label>
+            <input type="password" id="confirmPasswordLogin" class="form-control" placeholder="Confirme sua senha">
+        </div>
+        <button class="btn btn-primary w-100">Cadastrar</button>
+
     </div>
-
-    <div class="mb-3">
-        <label class="form-label">Senha</label>
-        <input type="password" id="passwordLogin" class="form-control" placeholder="Digite sua senha">
-    </div>
-
-    <button class="btn btn-primary w-100">Entrar</button>
-
-    </p>
-
-</div>
 
 </body>
+
 </html>
