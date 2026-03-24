@@ -83,4 +83,6 @@ const games = {
 
 const destaque = ["gow", "zelda", "elden"];
 
-const melhoresAv = ["zelda", "gow", "witcher3", "rdr2", "elden", "minecraft", "fifa23", "fortnite","hollowknight", "cyberpunk"];
+const emAlta = ["zelda", "gow", "witcher3", "rdr2", "elden", "minecraft", "fifa23", "fortnite","hollowknight", "cyberpunk"];
+
+const melhoresAv = ["elden", "minecraft", "witcher3", "rdr2", "gow  ", "hollowknight", "fifa23", "fortnite","zelda", "cyberpunk"];

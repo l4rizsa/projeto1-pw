@@ -99,4 +99,5 @@ if (typeof games !== "undefined" && gameId) {
 if (typeof destaque !== "undefined") {
     createCarousel(destaque, "carouselInner");
 }
+createCards(emAlta, "emAlta");
 createCards(melhoresAv, "melhoresAv");
