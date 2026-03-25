@@ -18,7 +18,7 @@ function createCarousel(data, containerId) {
         item.innerHTML = `
             <a href="game.html?id=${id}" class="carousel-link">
                 <div class="imgcarousel">
-                    <img src="${game.image}" class="d-block w-100" alt="">
+                    <img src="${game.banner}" class="d-block w-100" alt="">
                 </div>
                 <div class="container">
                     <div class="carousel-caption text-start">
@@ -95,9 +95,14 @@ if (typeof games !== "undefined" && gameId) {
 }
 
 
-//createCarousel(destaque, "carouselItem");
 if (typeof destaque !== "undefined") {
     createCarousel(destaque, "carouselInner");
 }
+
 createCards(emAlta, "emAlta");
 createCards(melhoresAv, "melhoresAv");
+createCards(lancamentos, "lancamentos");
+createCards(classicos, "classicos");
+createCards(indie, "indie");
+createCards(multiplayer, "multiplayer");
+createCards(todos, "todos");
