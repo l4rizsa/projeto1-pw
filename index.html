@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header fixed-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
@@ -35,6 +35,7 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Explorar</a>
                             <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Todos</a></li>
                                 <li><a class="dropdown-item" href="#">Ação</a></li>
                                 <li><a class="dropdown-item" href="#">FPS</a></li>
                                 <li><a class="dropdown-item" href="#">Aventura</a></li>
@@ -80,11 +81,11 @@
                         </button>
                     </form>
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav flex-row me-auto mb-2 mb-lg-0">
                         <li class="nav-item ms-4">
                             <a class="nav-link me-3" id="navlogin" href="login.html">Login</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ms-auto">
                             <a class="nav-link" href="cadastro.html">Cadastrar</a>
                         </li>
                     </ul>
@@ -112,54 +113,11 @@
         </nav>
     </header>
 
-
-
-
     <div class="container">
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
             <div class="carousel-indicators" id="carouselIndicators">
-                <!--<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
-                    class="" aria-label="Slide 1"></button> <button type="button" data-bs-target="#myCarousel"
-                    data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button> <button
-                    type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    class=""></button>-->
             </div>
             <div class="carousel-inner" id="carouselInner">
-                <!--<div class="carousel-item active" id="carouselItem">-->
-
-
-                <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
-                        <img src="images/banner.png" class="d-block w-100" alt="">
-                        <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>Título do Jogo</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                    carousel.</p>
-                            </div>
-                        </div>
-                    </a>-->
-                <!--</div>-->
-
-
-                <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
-                        <img src="images/banner.png" class="d-block w-100" alt="">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Título do Jogo</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            </div>
-                        </div>
-                    </a>-->
-
-                <!--<a href="https://deltarune.com/" target="_blank" class="carousel-link">
-                        <img src="images/banner.png" class="d-block w-100" alt="">
-                        <div class="container">
-                            <div class="carousel-caption text-end">
-                                <h1>Título do Jogo</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            </div>
-                        </div>
-                    </a>-->
 
             </div> <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
                 data-bs-slide="prev">
@@ -171,31 +129,17 @@
         </div>
     </div>
 
-
-
-
-
-
     <div class="container lg-3">
         <p class="section-title">Em Alta</p>
         <hr>
+        <div class="cards" id="emAlta"></div>
 
-        <div class="cards" id="emAlta">
+        <p class="section-title">Melhores Avaliados</p>
+        <hr>
+        <div class="cards" id="melhoresAv"></div>
 
-        </div>
 
-
-
-        <div class="container mt-3">
-            <p class="section-title">Melhores Avaliados</p>
-            <hr>
-
-            <div class="cards" id="melhoresAv">
-                
-            </div>
-        </div>
-
-        <div class="container mt-3">
+        <!--<div class="container mt-3">
             <p class="section-title">Plataformas</p>
             <hr>
 
@@ -215,16 +159,24 @@
                 <div class="card pc">
                     <img src="images/controle.png" alt="">
                 </div>
-            </div>
+            </div>-->
 
 
+        <br><br><br><br>
+    </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                crossorigin="anonymous"></script>
 
-            <script src="data.js"></script>
-            <script src="script.js"></script>
+    <footer class="footer text-center">
+            <p><small>© 2026 GameOtter. Todos os direitos reservados.</small></p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
