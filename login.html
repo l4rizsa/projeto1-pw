@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="login">
 <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -70,26 +70,24 @@
             </div>
         </nav>
     </header>
-<div class="border p-4 bg-secondary" style="width: 350px; margin: 100px auto;">
+    <div class="login-card">
+        <h3 class="text-center mb-3">GameOtter</h3>
+        <h5 class="text-center mb-4">Login</h5>
 
-    <h3 class="text-center mb-3">GameOtter</h3>
-    <h5 class="text-center mb-4">Login</h5>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" id="loginEmail" class="form-control" placeholder="Digite seu email">
+        </div>
 
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" id="loginEmail" class="form-control" placeholder="Digite seu email">
+        <div class="mb-3">
+            <label class="form-label">Senha</label>
+            <input type="password" id="loginSenha" class="form-control" placeholder="Digite sua senha">
+        </div>
+
+        <button class="btn btn-primary w-100">Entrar</button>
     </div>
 
-    <div class="mb-3">
-        <label class="form-label">Senha</label>
-        <input type="password" id="loginSenha" class="form-control" placeholder="Digite sua senha">
-    </div>
+</body>
 
-    <button onclick="login()" class="btn btn-primary w-100">Entrar</button>
-
-    </p>
-
-</div>
-<script src="login.js"></script>
 </body>
 </html>
