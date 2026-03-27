@@ -16,7 +16,7 @@ function createCarousel(data, containerId) {
         }
 
         item.innerHTML = `
-            <a href="review.html?id=${id}" class="carousel-link">
+            <a href="game.html?id=${id}" class="carousel-link">
                 <div class="imgcarousel">
                     <img src="${game.banner}" class="d-block w-100" alt="">
                 </div>
