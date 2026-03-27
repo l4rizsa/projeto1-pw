@@ -1,6 +1,6 @@
 function createCarousel(data, containerId) {
     const container = document.getElementById(containerId);
-    const indicators = document.getElementById("carouselIndicators");   
+    const indicators = document.getElementById("carouselIndicators");
 
     if (!container) return;
 
@@ -64,7 +64,7 @@ function createCards(data, containerId) {
         card.className = "card";
 
         card.innerHTML = `
-            <a href="game.html?id=${id}" style="text-decoration: none; color: inherit;">
+            <a href="review.html?id=${id}" style="text-decoration: none; color: inherit;">
                 <div class="imgcard">
                     <img src="${game.image}" alt="">
                 </div>
@@ -87,7 +87,15 @@ if (typeof games !== "undefined" && gameId) {
         const title = document.getElementById("title");
         const image = document.getElementById("image");
         const desc = document.getElementById("desc");
+        const rating = document.getElementById("rating");
+        const platform = document.getElementById("platform");
+        const genre = document.getElementById("genre");
+        const year = document.getElementById("year");
 
+        if (rating) rating.textContent = game.rating;
+        if (platform) platform.textContent = game.platform;
+        if (genre) genre.textContent = game.genre;
+        if (year) year.textContent = game.year;
         if (title) title.textContent = game.title;
         if (image) image.src = game.image;
         if (desc) desc.textContent = game.description;
